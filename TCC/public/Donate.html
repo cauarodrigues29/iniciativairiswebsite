@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <!--Page Bar-->
+    <title>Doe</title>
+    <link rel="icon" type="image/jpg" href="images/Icons/Logo.svg"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/Global.css">
+    <link rel="stylesheet" href="css/Donate.css">
+
+    <!-- FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="Index.html">
+                <image src="images/Icons/Logo.svg" alt="logo íris" height="47px">
+            </a>
+            <a id="Project-name" href="Index.html">
+                Iniciativa Íris
+            </a>
+        </div>
+        <nav>
+            <div id="Menu">
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="About.html">Sobre Nós</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Volunteers.html">Trabalhe Conosco</a></li>
+                <li><a href="Donate.html" id="On-Page">Doe</a></li>
+            </div>
+
+
+            <div id="Login">
+                <a href="Login.php">
+                    <img src="images/Icons/login.png" alt="" height="30px">
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- INFORMAÇÕES DO DOADOR -->
+
+    <main>
+        <div id="instructions">
+            <h3>Dados de contato</h3>
+            <img src="images/Icons/arrow.png" >
+        </div>
+
+        <div class="form donate">
+            <form name="form_inserir_doador" method="post" action="models/Donate.php">
+                <label>
+                    <p>Nome</p>
+                    <input type="text" required name="nome">
+                </label>
+
+                <label>
+                    <p>Idade</p>
+                    <input type="number" required name="idade">
+                </label>
+
+                <label>
+                    <p>Email</p>
+                    <input type="email" required name="email">
+                </label>
+
+                <label>
+                    <p>Sexualidade</p>
+                    <input type="text" required name="sexualidade">
+                </label>
+
+                <label>
+                    <p>Identidade de Gênero</p>
+                    <input type="text" required name="genero">
+                </label>
+
+                <label>
+                    <p>Telefone</p>
+                    <input type="text" required name="telefone">
+                </label>
+                
+                <div class="pronouns">
+                    <p>Pronomes</p>
+
+                    <div class="option one">
+                        <p>ela/dela</p>
+                        <input type="radio" name="pronomes" value="ela/dela">
+                    </div>
+
+                    <div class="option two">
+                        <p>ele/dele</p>
+                        <input type="radio" name="pronomes" value="ele/dele">
+                    </div>
+
+                    <div class="option three">
+                        <p>elu/delu</p>
+                        <input type="radio" name="pronomes" value="elu/delu">
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>       
+    </main>
+    
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div id="Mail_letter">
+            <h1>FAÇA PARTE!</h1>
+            <p>Fique por dentro de todas as novidades!</p>
+            <form name="form_newsletter" method="post" action="models/Newsletter.php">
+                <div>
+                    <input name="email" type="email" placeholder="Insira seu email aqui*" required>
+                    <button type="submit">Participar</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <div id="User-Contact">
+                <form name="form_mensagem" method="post" action="models/Contato.php">
+                    <h1>Entre em contato</h1>
+                    <p>
+                        Entre em contato conosco através deste rápido formulário! Basta preencher os dados 
+                        e deixar sua mensagem que retornaremos o mais rápido possível
+                    </p>
+        
+                    <label for="">Nome</label>
+                    <input type="text" name="nome" required>
+        
+                    <label for="">Email</label>
+                    <input type="email" name="email" required>
+        
+                    <label for="">Telefone</label>
+                    <input type="tel" name="telefone" required>
+        
+                    <label for="">Deixe sua mensagem aqui...</label>
+                    <input type="text" name="mensagem" required>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div>
+                <div id="Our-Contact">
+                    <div>
+                        <h3>ENDEREÇO</h3>
+                        <p>
+                            Rua 44, 383 - Bairro Independência
+                            Aparecida de Goiânia, GO 74967-310
+                        </p>
+                    </div>
+                    <div>
+                        <h3>TELEFONE</h3>
+                        <p>
+                            (62) 3248-6296
+                        </p>
+                    </div>
+                    <div>
+                        <h3>EMAIL</h3>
+                        <p>
+                            Suporte@iniciativairis.com
+                        </p>
+                    </div>
+                </div>
+                <div id="Social-Media">
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/facebook-black.png" alt="" height="40px">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/linkedin-black.png" alt="" height="40px">
+                            <p>Linkedin</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/instagram-black.png" alt="" height="40px">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/youtube-black.png" alt="" height="40px">
+                            <p>Youtube</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="Iniciativa">
+                    <p>© 2020 por Iniciativa Íris.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

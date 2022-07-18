@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <!--Page Bar-->
+    <title>Trabalhe Conosco</title>
+    <link rel="icon" type="image/jpg" href="images/Icons/Logo.svg"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/Global.css">
+    <link rel="stylesheet" href="css/Volunteers.css">
+
+    <!-- FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="Index.html">
+                <image src="images/Icons/Logo.svg" alt="logo íris" height="47px">
+            </a>
+            <a id="Project-name" href="Index.html">
+                Iniciativa Íris
+            </a>
+        </div>
+        <nav>
+            <div id="Menu">
+                <li><a href="Index.html">Início</a></li>
+                <li><a href="About.html">Sobre Nós</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Volunteers.html" id="On-Page">Trabalhe Conosco</a></li>
+                <li><a href="Donate.html">Doe</a></li>
+            </div>
+
+
+            <div id="Login">
+                <a href="Login.php">
+                    <img src="images/Icons/login.png" alt="" height="30px">
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="Bg_img">
+            <div>
+                <p>Iniciativa Íris</p>
+                <div id="Circle"></div>
+                <p id="Steps-subtitle" class="Active">Etapas</p>
+                <p id="Requirements-subtitle">Requisitos</p>
+                <p id="Schedule-subtitle">Cronograma</p>
+                <p id="Questions-subtitle">Dúvidas</p>
+            </div>
+        </div>
+        
+        <section id="Guide">
+            <p>Nesta Seção</p>
+            
+            <ul>
+                <li class="On-section" id="Section-Steps" onclick="Steps('Steps')">
+                    <p>Etapas</p>
+                    <img src="images/Icons/white-arrow.png" height="20px">
+                </li>
+                
+                <li id="Section-Requirements" onclick="Steps('Requirements')">
+                    <p>Requisitos</p>
+                    <img src="images/Icons/white-arrow.png" height="20px">
+                </li>
+
+                <li id="Section-Schedule" onclick="Steps('Schedule')">
+                    <p>Cronograma</p>
+                    <img src="images/Icons/white-arrow.png" height="20px">
+                </li>
+
+                <li id="Section-Questions" onclick="Steps('Questions')">
+                    <p>Dúvidas</p>
+                    <img src="images/Icons/white-arrow.png" height="20px">
+                </li>
+            </ul>
+        </section>
+
+        <div id="Text">
+            <div id="Steps" class="Steps Active">
+                <h2>Etapas</h2>
+    
+                <p>
+                    Conheça abaixo os detalhes aplicáveis ao funcionamento do processo seletivo da UWC Brasil 
+                    com inscrições em 2022 para a modalidade de concorrência a vagas no programa residencial dos colégios UWC:
+                </p>
+
+                <div class="Container">
+                    <div id="Step_one" class="Step-title" onclick="Show_informations(document.getElementById('Step_one'), document.getElementById('Step_one_information'), document.querySelector('main'))">
+                        <h3>1. Etapa</h3>
+                        <div class="Arrow"></div>
+                    </div>
+                    <div id="Step_one_information" class="Step-content">
+                        <p>
+                            Para candidatar-se ao processo seletivo vigente, é necessário realizar por completo todos os passos e procedimentos de inscrição. Todas as inscrições serão revisadas. 
+                            <br><br>
+                            Candidatos(as) cujas inscrições forem selecionadas numa revisão preliminar serão convidados(as) a realizar a prova online em data única e horário específico, conforme o cronograma oficial. 
+                            <br><br>
+                            Candidatos(as) não aprovados(as) nesta etapa poderão realizar a prova em período distinto conforme determinado no cronograma oficial e não estarão aptos(as) a participar das demais etapas do processo seletivo. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Step_two" class="Step-title" onclick="Show_informations(document.getElementById('Step_two'), document.getElementById('Step_two_information'), document.querySelector('main'))">
+                        <h3>2. Etapa</h3>
+                        <div class="Arrow"></div>
+                    </div>
+                    <div id="Step_two_information" class="Step-content">
+                        <p>
+                            Para candidatar-se ao processo seletivo vigente, é necessário realizar por completo todos os passos e procedimentos de inscrição. Todas as inscrições serão revisadas. 
+                            <br><br>
+                            Candidatos(as) cujas inscrições forem selecionadas numa revisão preliminar serão convidados(as) a realizar a prova online em data única e horário específico, conforme o cronograma oficial. 
+                            <br><br>
+                            Candidatos(as) não aprovados(as) nesta etapa poderão realizar a prova em período distinto conforme determinado no cronograma oficial e não estarão aptos(as) a participar das demais etapas do processo seletivo. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Step_three" class="Step-title" onclick="Show_informations(document.getElementById('Step_three'), document.getElementById('Step_three_information'), document.querySelector('main'))">
+                        <h3>3. Etapa</h3>
+                        <div class="Arrow"></div>
+                    </div>
+                    <div id="Step_three_information" class="Step-content">
+                        <p>
+                            Para candidatar-se ao processo seletivo vigente, é necessário realizar por completo todos os passos e procedimentos de inscrição. Todas as inscrições serão revisadas. 
+                            <br><br>
+                            Candidatos(as) cujas inscrições forem selecionadas numa revisão preliminar serão convidados(as) a realizar a prova online em data única e horário específico, conforme o cronograma oficial. 
+                            <br><br>
+                            Candidatos(as) não aprovados(as) nesta etapa poderão realizar a prova em período distinto conforme determinado no cronograma oficial e não estarão aptos(as) a participar das demais etapas do processo seletivo. 
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium efficitur hendrerit. Duis quis nisi at sapien porttitor tempus. Vivamus id purus nulla. Quisque neque felis, lacinia id egestas 
+                    nec, tristique et nisl. Nulla mollis tristique magna, sed aliquet quam hendrerit non. Maecenas blandit pretium ex quis consectetur. Quisque ultricies semper lacus vel cursus. Donec id ipsum scelerisque, porttitor nunc 
+                    vel, condimentum orci. Maecenas iaculis felis libero, a porta quam laoreet sit amet. Suspendisse ut convallis ipsum.
+                </p>
+
+                <div id="Button">
+                    <a href="Volunteers-form.html"><button>Participe</button></a>
+                </div>
+            </div>
+    
+            <div id="Requirements" class="Requirements">
+                <h2>Requisitos</h2>
+
+                <p>                
+                    Podem  participar do nosso processo seletivo para o programa residencial de dois anos dos colégios UWC estudantes que:
+                </p>
+
+                <br>
+                <ul>
+                    <li>
+                        <span>
+                            Estejam cursando o Ensino Médio tradicional ou equivalente (técnico ou high school) no momento da inscrição;
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Tenham entre 15 e 18 anos até 31/8 do ano em que ingressariam no colégio (ano seguinte ao de inscrição);
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Sejam cidadãos brasileiros ou residentes permanentes no Brasil com RNE;
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Residam no território brasileiro;
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            Não tenham chegado à etapa final, caso tenham participado do processo seletivo em anos anteriores; e
+                        </span>
+                    </li>
+                    <li>
+                       <span>
+                        Sejam aprovados(as) no seu ano escolar entre o início do processo seletivo e eventual aprovação. Situações 
+                        decorrentes dos efeitos da pandemia poderão ser avaliadas em caráter excepcional caso a caso, conforme 
+                        eventualmente necessário, sendo a decisão final e irrecorrível da UWC Brasil.
+                       </span>
+                    </li>
+                </ul>
+
+                <p>
+                    Não é necessário o conhecimento prévio de línguas estrangeiras. A fluência de candidatos(as) não será testada como critério de seleção. 
+                </p>
+            </div>
+
+            <div id="Schedule" class="Schedule">
+                <h2>Cronograma</h2>
+
+                <br>
+                <h4>Lorem ipsum:</h4>
+
+                <p>                
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium efficitur hendrerit. Duis quis nisi at sapien porttitor tempus. Vivamus id purus nulla. Quisque neque felis, lacinia id egestas nec, tristique et nisl. Nulla mollis tristique magna, sed aliquet quam hendrerit non. Maecenas blandit pretium ex quis consectetur. Quisque ultricies semper lacus vel cursus. Donec id ipsum scelerisque, porttitor nunc vel, condimentum orci. Maecenas iaculis felis libero, a porta quam laoreet sit amet. Suspendisse ut convallis ipsum.
+                </p>
+
+                <br>
+                <h4>Lorem ipsum:</h4>
+
+                <p>
+                    Sed pulvinar congue eros et volutpat. Fusce ornare facilisis ligula non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue a libero eu tristique. Suspendisse finibus urna eget luctus laoreet. Mauris maximus id dui eget tincidunt. Morbi malesuada feugiat dolor, id hendrerit leo faucibus eget. Vestibulum vulputate lobortis orci, ut fermentum sem condimentum id. Praesent semper aliquam est id tempor. Duis ultricies diam nunc, vel efficitur neque semper a. Curabitur nisi urna, tempus id accumsan a, tincidunt at quam. Duis molestie facilisis ligula, sit amet imperdiet sapien. Sed nec elit sagittis, tempor ligula vitae, maximus est. Donec ut ante non diam finibus tempor. Pellentesque consequat, eros et rutrum efficitur, neque turpis venenatis tellus, quis faucibus enim sapien imperdiet velit.
+                </p>
+            </div>
+
+            <div id="Questions" class="Questions">
+
+                <h2>Dúvidas</h2>
+
+                <br>
+                <h4>Lorem ipsum:</h4>
+
+                <p>                
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium efficitur hendrerit. Duis quis nisi at sapien porttitor tempus. Vivamus id purus nulla. Quisque neque felis, lacinia id egestas nec, tristique et nisl. Nulla mollis tristique magna, sed aliquet quam hendrerit non. Maecenas blandit pretium ex quis consectetur. Quisque ultricies semper lacus vel cursus. Donec id ipsum scelerisque, porttitor nunc vel, condimentum orci. Maecenas iaculis felis libero, a porta quam laoreet sit amet. Suspendisse ut convallis ipsum.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div id="Mail_letter">
+            <h1>FAÇA PARTE!</h1>
+            <p>Fique por dentro de todas as novidades!</p>
+            <form name="form_newsletter" method="post" action="models/Newsletter.php">
+                <div>
+                    <input name="email" type="email" placeholder="Insira seu email aqui*" required>
+                    <button type="submit">Participar</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <div id="User-Contact">
+                <form name="form_mensagem" method="post" action="models/Contato.php">
+                    <h1>Entre em contato</h1>
+                    <p>
+                        Entre em contato conosco através deste rápido formulário! Basta preencher os dados 
+                        e deixar sua mensagem que retornaremos o mais rápido possível
+                    </p>
+        
+                    <label for="">Nome</label>
+                    <input type="text" name="nome" required>
+        
+                    <label for="">Email</label>
+                    <input type="email" name="email" required>
+        
+                    <label for="">Telefone</label>
+                    <input type="tel" name="telefone" required>
+        
+                    <label for="">Deixe sua mensagem aqui...</label>
+                    <input type="text" name="mensagem" required>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div>
+                <div id="Our-Contact">
+                    <div>
+                        <h3>ENDEREÇO</h3>
+                        <p>
+                            Rua 44, 383 - Bairro Independência
+                            Aparecida de Goiânia, GO 74967-310
+                        </p>
+                    </div>
+                    <div>
+                        <h3>TELEFONE</h3>
+                        <p>
+                            (62) 3248-6296
+                        </p>
+                    </div>
+                    <div>
+                        <h3>EMAIL</h3>
+                        <p>
+                            Suporte@iniciativairis.com
+                        </p>
+                    </div>
+                </div>
+                <div id="Social-Media">
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/facebook-black.png" alt="" height="40px">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/linkedin-black.png" alt="" height="40px">
+                            <p>Linkedin</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/instagram-black.png" alt="" height="40px">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/Icons/youtube-black.png" alt="" height="40px">
+                            <p>Youtube</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="Iniciativa">
+                    <p>© 2020 por Iniciativa Íris.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+   <!-- SCRIPTS -->
+   <script src="js/Volunteers.js"></script>
+
+</html>
