@@ -1,0 +1,377 @@
+header{
+    height: 13vh;
+}
+
+footer{
+    height: 155vh;
+    background: var(--soft-grey);
+    padding-top: 10rem;
+}
+
+#Mail_letter{
+    margin-top: 0;
+}
+
+main{
+    background: var(--soft-grey);
+    height: 160vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 55vh 80vh;
+    grid-template-areas: "bg bg"
+                         "guide content";
+}
+
+/* BACKGROUND */
+
+#Bg_img{
+    grid-area: bg;
+    background-size: 100% 100%;
+    -webkit-box-shadow: 0px -50px 35px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px -50px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px -200px 35px rgba(0, 0, 0, 0.5);
+    width: 99vw;
+    height: 55vh;
+    background-image: url(../images/Backgrounds/cover.png);
+    color: var(--white);
+    font-size: 85%;
+}
+
+#Bg_img > div{
+    display: flex;
+    gap: 1rem;
+    margin-top: 36rem;
+    margin-left: 55rem;
+}
+
+#Circle{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 3px solid var(--white);
+    border-radius: 100%;
+    opacity: .3;
+    margin-top: .5rem;
+}
+
+#Circle ~ p{
+    color: var(--white);
+    opacity: .6;
+}
+
+/* GUIA */
+
+#Guide{
+    grid-area: guide;
+    width: 30rem;
+    height: 44rem;
+    background: var(--white);
+    align-items: center;
+    margin-left: 17rem;
+    margin-top: -5rem;
+    display: grid;
+    grid-template-rows: 9rem 28rem;
+    grid-row-gap: 2rem;
+    -webkit-box-shadow: 3px 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 3px 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 3px 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+#Guide > p{
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 150%;
+    height: 9rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+#Guide ul{
+    font-size: 120%;
+    display: grid;
+    grid-template-rows: 7rem 7rem 7rem 7rem;
+}
+
+#Guide ul li{
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#Guide ul li img{
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: 23rem;
+    opacity: 0;
+}
+
+#Guide ul li:hover img{
+    opacity: 1;
+    transition: 0.6s;
+}
+
+#Guide ul li:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* CONTEÚDO */
+
+#Text {
+    grid-area: content;
+    padding-left: 4rem;
+    padding-top: 8rem;
+}
+
+#Text h2{
+    color: var(--blue);
+}
+
+#Text div{
+    width: 80rem;
+}
+
+#Text p{
+    text-align: justify;
+    margin-top: 2rem;
+    font-size: 95%;
+    font-weight: 300;
+}
+
+#Text h4{
+    font-weight: 500;
+}
+
+#Button{
+    margin-top: 5rem;
+    margin-left: 20rem;
+    height: 4rem;
+    width: 40rem !important;
+    border-radius: 5px;
+}
+
+#Text a{
+    transition: .7s;
+    color: var(--black);
+    border-radius: 5px;
+}
+
+#Text button{
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 110%;
+    height: 4rem;
+    width: 40rem;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    transition: .7s;
+}
+
+#Text a:hover button{
+    filter: brightness(1.2);
+    color: var(--white);
+    background: var(--pink);
+    transition: .7s;
+}
+
+#Text a:hover{
+    color: var(--white);
+    transition: .7s;
+}
+
+/* ETAPAS */
+
+.Container{
+    margin-top: 2rem;
+}
+
+.Step-title{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    height: 8rem;
+    padding-inline: 4rem;
+    border: 2px solid var(--pink);
+}
+
+.Step-title:hover{
+    cursor: pointer;
+}
+
+.Step-title h3{
+    color: var(--pink);
+}
+
+.Arrow{
+    border-top: 2px solid var(--pink);
+    width: 15px !important;
+    transform: rotate(45deg) translateY(1rem);
+    transition: .5s;
+}
+
+#Step_one.Show {
+    background: var(--pink);
+}
+
+#Step_one.Show  h3{
+    color: var(--white);
+}
+
+#Step_one.Show .Arrow{
+    transform: rotate(225deg) translate(-.5rem, .5rem);
+    border-color: var(--white);
+    transition: .5s;
+}
+
+#Step_one.Show .Arrow::after{
+    background: var(--white);
+}
+
+.Arrow::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 1.6px;
+    background: var(--pink);
+    margin-top: 5px;
+    transition: .3s;
+    transform: rotate(270deg) translate(1.5rem,.7rem);
+    position: relative;
+}
+
+.Step-content{
+    height: 0rem;
+    padding-inline: 3rem;
+    overflow: hidden;
+    background: var(--white);
+    transition: .5s;
+}
+
+#Step_one_information.Show{
+    height: 30rem;
+    padding-top: 1rem;
+    border: 2px solid var(--pink);
+    transition: .5s;
+}
+
+#Step_one_information p{
+    text-align: left;
+}
+
+/* VARIAÇÕES DO ELEMENTO ETAPAS */
+
+
+#Step_two.Show {
+    background: var(--pink);
+}
+
+#Step_two.Show  h3{
+    color: var(--white);
+}
+
+#Step_two.Show .Arrow{
+    transform: rotate(225deg) translate(-.5rem, .5rem);
+    border-color: var(--white);
+    transition: .5s;
+}
+
+#Step_two.Show .Arrow::after{
+    background: var(--white);
+}
+
+#Step_two_information.Show{
+    height: 30rem;
+    padding-top: 1rem;
+    border: 2px solid var(--pink);
+    transition: .5s;
+}
+
+#Step_three.Show {
+    background: var(--pink);
+}
+
+#Step_three.Show  h3{
+    color: var(--white);
+}
+
+#Step_three.Show .Arrow{
+    transform: rotate(225deg) translate(-.5rem, .5rem);
+    border-color: var(--white);
+    transition: .5s;
+}
+
+#Step_three.Show .Arrow::after{
+    background: var(--white);
+}
+
+#Step_three_information.Show{
+    height: 30rem;
+    padding-top: 1rem;
+    border: 2px solid var(--pink);
+    transition: .5s;
+}
+
+.Show p{
+    text-align: left;
+}
+
+/* REQUISITOS */
+
+#Text #Requirements ul li{
+    margin-left: 6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    color: var(--pink);
+}
+
+#Text #Requirements ul li span{
+    color: var(--black);
+}
+
+/* DIVISION OF CONTENT */
+
+.Steps{
+    display: none;
+}
+
+.Requirements{
+    display: none;
+}
+
+.Schedule{
+    display: none;
+}
+
+.Questions{
+    display: none;
+}
+
+#Steps-subtitle{
+    display: none;
+}
+
+#Requirements-subtitle{
+    display: none;
+}
+
+#Schedule-subtitle{
+    display: none;
+}
+
+#Questions-subtitle{
+    display: none;
+}
+
+.Active{
+    display: block !important;
+}
+
+.On-section{
+    background: var(--blue);
+    color: var(--white);
+}
