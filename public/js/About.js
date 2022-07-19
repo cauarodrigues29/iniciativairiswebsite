@@ -42,7 +42,7 @@ function Section(x){
             Background.style.backgroundSize= '100% 100%';
             Body.style.gridTemplateRows = '13vh 167vh 155vh';
         } else if (x==='Mission'){
-            Background.style.background = 'url(images/Backgrounds/parallax_bg.jpg)';
+            Background.style.background = 'url(images/Backgrounds/cover.png)';
             Background.style.backgroundSize= '100% 100%';
             Body.style.gridTemplateRows = '13vh 140vh 155vh';
         } else if (x==='Partners'){
