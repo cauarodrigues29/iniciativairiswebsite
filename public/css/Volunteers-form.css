@@ -1,0 +1,191 @@
+/* CADASTRO DO VOLUNTÁRIO */
+
+main{
+    padding-bottom: 5rem;
+}
+
+/* NOME DO FORMULÁRIO E POSICIONAMENTO DA SETA */
+
+#instructions h3{
+    margin-left: 18vw;
+    margin-top: 11vh;
+    font-size: clamp(.8em, .5em + 1vw, 5vw);
+
+}
+
+#instructions img{
+    margin-top: 11.5vh;
+    width: clamp(10px, 2vw, 72px);
+    height: clamp(10px, 2vw, 72px);
+}
+
+#instructions{
+    display: flex;
+}
+
+/* FORMATO DO FORMULÁRIO */
+
+.form{
+    margin-left: 36.5vw;
+    min-width: 300px;
+    width: 26vw; 
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    padding-top: 3vh;
+    padding-inline: 2.3vw;
+    padding-bottom: 6vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px #0b0b0b;
+}
+
+/* FORMATAÇÃO GERAL DOS INPUT, SELECT E TEXTOS */
+
+.form input, select{
+    display: block;
+    margin-top: 1.1vh;
+    padding-left: 2%;
+    height: 4.35vh;
+    width: 19.5vw;
+    border-radius: 3px;
+    border: 2px solid rgb(187, 190, 218);
+}
+
+select{
+    margin-left: 1.7vw;
+}
+
+label p{
+    margin-top: 3.5vh;
+    font-weight: 700;
+    font-size: clamp(.6em, .5em + .5vw, 5vw);
+}
+
+/* FORMATAÇÃO DOS INPUT RADIO E CHECKBOX */
+
+.options {
+    margin-top: 3.2vh;
+}
+
+.options input{
+    width: 1.6vw;
+    height: 1.6vw;
+}
+
+.options p{
+    font-weight: 700;
+    font-size: clamp(.6em, .5em + .5vw, 5vw);
+}
+
+.options .option{
+    margin-top: 3vh;
+    display: flex;
+}
+
+.option div{
+    display: flex;
+    align-items: center;
+    padding-left: 1.2vw;
+    width: 12vw;
+}
+
+.option div ~ div{
+    padding-left: .65vw;
+}
+
+.option div p{
+    margin-top: .75vh;
+    margin-left: .42vw;
+}
+
+/* FORMATAÇÃO DOS BOTÕES */
+
+.form button, #Buttons button{
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: clamp(.75em, .5em + .6vw, 5vw);
+    height: 6vh;
+    width: 10vw;
+    margin-top: 11vh;
+    margin-left: 16.2vw;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    transition: .35s;
+}
+
+.form button:hover, .button:hover{
+    filter: brightness(1.2);
+    color: var(--white);
+    background: var(--pink);
+    transition: .35s;
+}
+
+#Buttons button{
+    transform: translate(42.5vw, 5vh);
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+#Buttons button:hover{
+    filter: brightness(1.2);
+    color: var(--white);
+    background: var(--pink);
+    transition: .35s;
+}
+
+#Return-one-button, #Last-return-button{
+    transform: translate(36.8vw, 5vh) !important;
+}
+
+#Return-one-button:hover, #Last-return-button:hover{
+    background: var(--blue) !important;
+}
+
+#Button{
+    display: flex;
+    justify-content: center;
+}
+
+/* SEÇÕES DAS PERGUNTAS */
+
+#Section-one{
+    display: none;
+}
+
+#Section-two{
+    display: none;
+}
+
+#Section-three{
+    display: none;
+}
+
+.Show-questions{
+    display: block !important;
+}
+
+/* BOTÕES DAS SEÇÕES */
+
+#Submit-button{
+   display: none;
+   position: absolute;
+}
+
+#Section-one-button{
+    display: none;
+    transform: translate(53vw, 5vh) !important;
+}
+
+#Second-questionary{
+    display: none;
+}
+
+#Last-return-button{
+    display: none;
+}
+
+.Show-btn{
+    display: flex !important;
+}

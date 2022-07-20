@@ -1,0 +1,206 @@
+main{
+    padding-bottom: 5rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* FORMATO DO CONTAINER DOS POSTS */
+
+.Container{
+    width: clamp(520px, 52vw, 52vw);
+    height: 55vh;
+    background-color: var(--white);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    margin-top: 5rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 4.375fr 5.625fr;
+}
+
+/* IMAGEM DOS POSTS */
+
+.Image{
+    border-radius: 10px 0 0 10px;
+}
+
+.Post-one{
+    background-size: 100% 100% !important;
+    background: url(../images/Blog/sorofobia.png);
+}
+
+.Post-two{
+    background-size: 100% 100% !important;
+    background: url(../images/Blog/frases.png);
+}
+
+.Post-three{
+    background-size: 100% 100% !important;
+	background: url(../images/Blog/nb.png);
+}
+
+.Post-four{
+	background-size: 100% 100% !important;
+    background: url(../images/Blog/homofobia.png);
+}
+
+.Post-five{
+    background-size: 100% 100% !important;
+    background: url(../images/Blog/comunidade.png);
+}
+
+/* LEGENDA DOS POSTS */
+
+.Post-caption{
+    padding: 9% 9% 3% 9%;
+}
+
+/* AUTOR */
+
+.Author{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Author-img{
+    height: 7.1vh;
+    width: 7.1vh;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.Caua{
+    background: url(../images/Fundadores/caua.jpeg);
+    background-size: 100% 100%;
+}
+
+.Luiza{
+    background: url(../images/Fundadores/luiza.png);
+    background-size: 100% 100%;
+}
+
+.Luma{
+    background: url(../images/Fundadores/luma.png);
+    background-size: 100% 100%;
+}
+
+.Francisco{
+    background: url(../images/Fundadores/francisco.png);
+    background-size: 100% 100%;
+}
+
+.Luis{
+    background: url(../images/Fundadores/luis.png);
+    background-size: 100% 100%;
+}
+
+/* TEXTO */
+
+.Text{
+    margin-top: 8.3%;
+    overflow-y: scroll;
+    height: 35vh;
+}
+
+.Text::-webkit-scrollbar{
+    width: 7px;
+}
+
+.Text p{
+    font-weight: 300;
+    font-size: clamp(.7em, .3em + .65vw, 2vw);
+}
+
+@media (max-width: 700px){
+    .Container{
+        width: clamp(280px, 70vw, 520px);
+        height: 55vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5.625fr 4.375fr;
+    }
+
+    .Image{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .Post-one{
+        background: url(https://images.unsplash.com/photo-1618969322232-92a7aa295ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWN0aXZpc218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    
+    .Post-two{
+        background: url(https://images.unsplash.com/photo-1607074245269-848539fe3335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YWN0aXZpc218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) no-repeat;
+    }
+
+    .Author{
+        height: 5vh;
+    }
+    
+    .Author-img{
+        height: 4.5vh;
+        width: 4.5vh;
+    }
+
+    .Text{
+        margin-top: 6%;
+        height: 12vh;
+    }
+    
+    .Text p{
+        font-weight: 300;
+        font-size: clamp(.7em, .45em + .7vw, 1.5em);
+    }
+
+    .Text::-webkit-scrollbar{
+        width: 4px;
+    }
+}
+
+
+@media (min-height: 1000px){
+    .Container{
+        width: clamp(280px, 70vw, 520px);
+        height: 55vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5.625fr 4.375fr;
+    }
+
+    .Image{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .Post-one{
+        background: url(https://images.unsplash.com/photo-1618969322232-92a7aa295ce1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWN0aXZpc218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    
+    .Post-two{
+        background: url(https://images.unsplash.com/photo-1607074245269-848539fe3335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YWN0aXZpc218ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) no-repeat;
+    }
+
+    .Author{
+        height: 5vh;
+    }
+    
+    .Author-img{
+        height: 4.5vh;
+        width: 4.5vh;
+    }
+
+    .Text{
+        margin-top: 6%;
+        height: 12vh;
+    }
+    
+    .Text p{
+        font-weight: 300;
+        font-size: clamp(.7em, .45em + .7vw, 1.5em);
+    }
+
+    .Text::-webkit-scrollbar{
+        width: 4px;
+    }
+}

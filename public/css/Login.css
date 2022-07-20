@@ -1,0 +1,120 @@
+body{
+    background: var(--dark-grey);
+}
+
+img{
+    width: 100%;
+}
+
+/* FOMATAÇÃO DA SETA DE VOLTAR */
+
+#Return-arrow{
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    transform: rotate(180deg) translate(-3vw, 2vw);
+}
+
+/* FORMATO DO CONTAINER DOS POSTS */
+
+.Container{
+    width: clamp(520px, 60vw, 60vw);
+    height: 85vh;
+    background-color: #FFF6F0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(10, 10, 10, 0.5);
+    margin-top: 5rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 5.625fr 4.375fr;
+}
+
+/* IMAGEM DOS POSTS */
+
+.Image{
+    border-radius: 10px 0 0 10px;
+}
+
+.Bg-img{
+    background-position: center !important;
+    background-size: 100% 50% !important;
+    background: url(../images/Backgrounds/Login_bg.svg) no-repeat;
+}
+
+/* ÁREA DE LOGIN */
+
+.Login{
+    padding: 25% 9% 3% 9%;
+    background: var(--white);
+    border-radius: 0 10px 10px 0;
+    border-left: 1.5px solid rgba(199, 199, 203, .7);
+}
+
+/* INPUT E FORM */
+
+form{
+    margin-top: 5vh;
+}
+
+input{
+    display: block;
+    margin-top: 5%;
+    margin-left: 0;
+    padding-left: 2%;
+    height: 6vh;
+    width: 21.5vw;
+    border-radius: 3px;
+    border: 1.5px solid rgb(199, 199, 203);
+}
+
+input::placeholder{
+    font-size: clamp(.15em, .3em + .7vw, 1.5em);
+}
+
+form button{
+    width: 21.5vw;
+    height: 6vh;
+    margin-top: 8%;
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    background: #0081cc;
+}
+
+/* DIVISOR */
+
+.Divisor{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.Divisor hr{
+    width: 9vw;
+    height: .3vh;
+    background: var(--soft-grey);
+}
+
+@media (max-width: 700px){
+    .Container{
+        width: clamp(280px, 70vw, 520px);
+        height: 55vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5.625fr 4.375fr;
+    }
+
+}
+
+
+@media (min-height: 1000px){
+    .Container{
+        width: clamp(280px, 70vw, 520px);
+        height: 55vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5.625fr 4.375fr;
+    }
+
+}

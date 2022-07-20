@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+   /*  outline: 1px solid limegreen !important; */ 
+}
+
+html {
+    --pink: #ff408e;
+    --white: #ffffff;
+    --burnt-white: #fff6ef;
+    --soft-black: #030303;
+    --black: #000000;
+    --medium-grey: #dfe3e6;
+    --soft-grey: #ebedee;
+    --medium-pink: #ffd0e3;
+    --soft-pink: #fed4e5;
+    --soft-blue: #99cdeb;
+    --blue: #0081cc;
+    --grey: #a0abb1;
+    --dark-grey: #838c90;
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(212, 210, 210);
+    border-radius: 10px;
+}
+
+button, input, textarea, li {
+    font-family: 'Poppins', 'Open Sans' , sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    min-width: 32rem;
+    max-width: 170rem;
+    
+    /* intervalo de tamanho */
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Poppins', 'Open Sans' , sans-serif;
+
+    width: 100%;
+    background: var(--soft-grey);
+}
+
+/* ESTILIZAÇÃO DOS BOTÕES E INPUT */
+input, button, .button{
+    height: 2rem;
+}
+
+button, .button{
+    font-family:Poppins;
+    line-height: 0;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+    color: var(--black);
+    
+    cursor: pointer;
+    font-size: 100%;
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+/* HEADER */
+
+header {
+    height: 13vh;
+    width: 99vw;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header > div{
+    margin-left: 2vw;
+    gap: .75vw;
+}
+
+header > div img{
+    width: clamp(5vw, 8vw, 12vw);
+}
+
+#Project-name {
+    color: var(--black);
+    font-size: clamp(.6em, .3em + 2vw, 4vw);
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+/* MENU */
+
+#Menu{
+    font-size: clamp(.6em, .3em + 1vw, 2.5vw);
+    font-weight: 600;
+    gap: .8vw;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+#Menu-Mobile{
+    display: none;
+}
+
+#Login {
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 1.5vw;
+}
+
+nav a{
+    color: var(--black);
+    padding-inline: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: 3px solid transparent;
+    border-radius: 40px;
+}
+
+nav #Menu a:hover{
+    border: 3px solid var(--pink);
+    transition: .5s;
+}
+
+#On-Page{
+    border: 3px solid var(--pink);
+}
+
+#Nav{
+    list-style: none;
+    background: var(--blue);
+    transition: 1s;
+    overflow: hidden;
+    height: 0;
+}
+
+/* MENU MOBILE */
+
+@media (max-width: 900px){
+    body, header, footer {
+        width: 100vw !important;
+    }
+}
+
+@media (max-width: 700px){
+
+    body, header, footer {
+        width: 100vw !important;
+    }
+
+    header > div img{
+        width: clamp(50px, 1em + 1vw, 12vw) !important;
+    }
+    
+    #Project-name {
+        color: var(--black);
+        font-size: clamp(1.2em, .3em + 2vw, 4vw);
+        font-family: "Poppins";
+        font-weight: 700;
+    }
+
+    #On-Page{
+        border: none;
+    }
+
+    #On-Page{
+        color: var(--soft-blue) !important;
+    }
+
+    #Menu{
+        display: none;
+    }
+
+    #Menu-Mobile{
+        display: flex;
+        margin-right: 3rem;
+    }
+        
+    #Hamburguer {
+        border-top: 3px solid var(--black);
+        width: 20px;
+    }
+    
+    #Hamburguer::after, #Hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: var(--black);
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #Menu-Mobile.active #Hamburguer{
+        border-top-color: transparent;
+    }
+    
+    #Menu-Mobile.active #Hamburguer::after{
+        transform: rotate(-135deg);
+        top: -8px;
+        background: var(--pink);
+    }
+    
+    #Menu-Mobile.active #Hamburguer::before{
+        transform: rotate(135deg);
+        background: var(--pink);
+    }
+
+    #Nav.active{
+        display:inline-table;
+        min-height: 120px;
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        list-style: none;
+    }
+
+    #Nav li {
+        border-bottom: 1px solid var(--soft-grey);
+        font-size: clamp(.15em, .5em + 1vw, 1em);
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+    }
+
+    #Nav :last-child{
+        border-bottom: none !important;
+    }
+
+    #Nav li a{
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 700;
+    }
+
+    #Mail_letter{
+        background: linear-gradient(to bottom, var(--blue), var(--blue) 92%, var(--soft-grey) 92%) !important;
+        font-size: clamp(.9em, .3em + 1vw, 1.5vw) !important;
+    }
+
+    #Mail_letter div input{
+        height: 6vh !important;
+        width: 60% !important;
+        padding-left: 5% !important;
+    }
+
+    #Mail_letter div button{
+        height: 6vh !important;
+        width: 20% !important;
+        font-size: clamp(.9em, .3em + 1vw, 1.5vw) !important;
+    }
+
+    footer > div ~ div{
+        display: block !important;
+    }
+
+        
+    #User-Contact{
+        margin: auto !important;
+        width: 75vw !important;
+        font-size: clamp(.8em, .5em + 2vw, 1.6em) !important;
+    }
+    
+    #User-Contact p{
+        margin-top: 5% !important;
+        margin-bottom: 5vh !important;
+    }
+
+    #User-Contact label{
+        margin-top: 8% !important;
+        margin-bottom: 1.5% !important;
+    }
+
+    #User-Contact label p,input{
+        margin-left: 0 !important;
+    }
+
+    #User-Contact input{
+        width: 70% !important;
+    }
+
+    #User-Contact button{
+        margin-top: 10% !important;
+        margin-left: 0 !important;
+    }
+
+    #Our-Contact{
+        margin-top: 20% !important;
+        margin-inline: auto !important;
+        display: flex !important;
+        width: 80% !important;
+        gap: 3.5% !important;
+    }
+
+    #Our-Contact div{
+        width: 31% !important;
+        height: none !important;
+    }
+
+    #Our-Contact div h3{
+        font-size: clamp(1em, 1em + 1vw, 2em) !important;
+    }
+
+    #Our-Contact div p{
+        margin-top: 20% !important;
+        font-size: clamp(.8em, .5em + 1vw, 1.5em) !important;
+    }
+
+    #Our-Contact div:last-child{
+        font-size: clamp(.5em, .35em + 1vw, 1.2em) !important;
+    }
+
+    #Social-Media{
+        width: 70% !important;
+        margin-inline: auto !important;
+        gap: 5% !important;
+        margin-top: 20% !important;
+        margin-bottom: 10%;
+    }
+
+    
+    #Social-Media div a{
+        font-size: clamp(.8em, .5em + 1vw, 1.5em) !important;
+    }
+
+    #Iniciativa{
+        margin-left: 35% !important;
+        font-size: clamp(.8em, .5em + 1vw, 1em) !important;
+    } 
+}
+
+
+
+/* FOOTER */
+
+footer{
+    width: 99vw;
+    display: block;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    background: var(--soft-grey);
+}
+
+#Mail_letter{
+    display: block;
+    background: linear-gradient(to bottom, var(--blue), var(--blue) 90%, var(--soft-grey) 90%);
+    text-align: center;
+    width: 100%;
+    color: var(--white);
+    padding-top: 6rem;
+}
+
+#Mail_letter h1{
+    font-size: 450%;
+    margin-bottom: 1rem;
+}
+
+#Mail_letter p{
+    font-size: 200%;
+    font-weight: 500;
+}
+
+#Mail_letter div{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.1%;
+    background: linear-gradient(to bottom, var(--blue), var(--blue) 50%, var(--soft-grey) 50%);
+}
+
+#Mail_letter div input{
+    height: 11vh;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding-left: 3rem;
+}
+
+#Mail_letter div input::placeholder{
+    font-weight: 700;
+}
+
+#Mail_letter div button{
+    height: 11vh;
+    width: 10%;
+    border: 2px solid var(--white);
+    background: var(--pink);
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    font-size: clamp(.75em, .3em + 1vw, 2vw);
+}
+
+footer > div ~ div{
+    display: flex;
+    margin-top: 9%;
+}
+
+#User-Contact{
+    margin-left: 10%;
+    width: 30vw;
+    font-weight: 200;
+    font-size: clamp(.6em, .3em + 1vw, 1vw);
+}
+
+#User-Contact p{
+    margin-top: 3%;
+    margin-bottom: 5vh;
+}
+
+#User-Contact label{
+    display: block;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#User-Contact label p,input{
+    margin-left: 1.75vw;
+}
+
+#User-Contact input{
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 18vw;
+    background: none;
+}
+
+#User-Contact button{
+    margin-top: 7.5%;
+    border: none;
+    background: none;
+    margin-left: 19.5vw;
+}
+
+#User-Contact button:hover{
+    color: var(--pink);
+    transition: 0.5s;
+}
+
+#Our-Contact{
+    margin-top: 10%;
+    margin-left: 25.5%;
+    display: flex;
+    width: 36vw;
+    font-weight: 300;
+    align-items: center;
+    gap: 1rem;
+}
+
+#Our-Contact div{
+    width: 15vw;
+    height: 17vh;
+}
+
+#Our-Contact div h3{
+    font-weight: 300;
+    font-size: clamp(.9em, .3em + 1vw, 2vw);
+}
+
+#Our-Contact div p{
+    margin-top: 7.5%;
+    font-size: clamp(.5em, .3em + .55vw, 2vw);
+}
+
+#Social-Media{
+    margin-left: 19.5vw;
+    display: flex;
+    gap: 3%;
+    height: 6.8vw;
+    width: 28.8vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#Social-Media div{
+    width: clamp(8rem, 6.7vw, 8.7vw);
+    height: clamp(8rem, 6.7vw, 8.7vw);
+    font-weight: 300;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Social-Media div a{
+    display: inline-block;
+    font-size: clamp(.5em, .3em + .65vw, 2vw);
+    width: clamp(6rem, 4.5vw, 6vw);
+    height: clamp(6rem, 4.5vw, 6vw);
+    color: var(--black);
+}
+
+#Social-Media img{
+    max-width: 55%;
+    min-width: 25%;
+    max-height: 55%;
+    min-width: 25%;
+}
+
+#Iniciativa{
+    font-weight: 300;
+    font-size: 80%;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 19.5vw;
+    font-size: clamp(.5em, .3em + .6vw, 2vw);
+} 
